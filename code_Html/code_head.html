@@ -1,0 +1,40 @@
+<!-- header -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 사용된 문자 집합 정의 -->
+    <meta charset="UTF-8">
+    <!-- 검색 엔진에 대한 키워드 정의 -->
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <!-- 웹 페이지에 대한 설명을 정의 -->
+    <meta name="description" content="Free Web tutorials">
+    <!-- 페이지 작성자 정의 -->
+    <meta name="author" content="김원">
+    <!-- 5초마다 문서 새로고침 -->
+    <meta http-equiv="refresh" content="5">
+    <!-- 웹사이트가 모든 기기에서 잘 보이도록 설정 
+         width=device-width = 장치의 화면 폭을 따라 페이지의 폭을 설정
+         initial-scale=1.0 = 페이지가 처음 브라우저에의해 로드된 초기 줌 레벨을 설정-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발자 쇼핑몰</title>
+    <script>
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "Hello JavaScript";
+        }
+    </script>
+    <style>
+        h1{
+            color: powderblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Web Page</h1>
+    <!-- id값은 한 페이지에서 유니크해야함 -->
+    <p id="demo">A paragraph</p>
+    <!-- 버튼 생성
+         type을 button, onclickd은 클릭했을 때 실행될 것-->
+    <button type="button" onclick="myFunction()">버튼을 눌러주세요</button>
+</body>
+</html>

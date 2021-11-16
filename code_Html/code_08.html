@@ -1,0 +1,44 @@
+<!-- css
+    css란 많은 작업을 절약합니다.
+    한번에 여러 웹페이지 레이아웃을 제어할 수 있습니다.
+    색상, 글꼴, 크기, 요소 사이의 간격, 요소가 어떻게 배치되고 배치했는디
+    다양한 장치와 화면 크기에 따라 다른 디스플레이를 제어할 수 있습니다,
+
+    설정방법
+    인라인 
+    - styleHtml요소 내부의 속성사용
+    - 단일 스타일 적용 시
+    내부 
+    - 색션의 <style> 요소를 사용
+    외부 
+    - <link> 요소를 사용하여 외부에서 css를 설정
+    - 많은 html 페이지의 스타일을 정의할 때 사용
+    - 파일에는 html 코드가 포함되어서는 안되며 확장자는 .css로 저장되어야함
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+
+        h1{
+            color: red;
+        }
+
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 인라인 방식 -->
+    <h1 style="background-color: indigo;">this is heading</h1>
+    <p>this is a paragraph</p>
+</body>
+</html>
