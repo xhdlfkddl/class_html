@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parents{
+            display: grid;
+            border: 5px solid #000;
+            /* 세로로 나눔
+              auto = 1분할
+              auto 대신 단위를 설정하면 해당 단위만큼 표를 차지하게 됨
+              fr 나누다
+              2fr = 남은 공간의 1/2만큼 차지*/
+            grid-template-columns: 100px 1fr 2fr;
+        }
+
+        .parents div{
+            color: #fff;
+            background-color: yellowgreen;
+            font-size: 30px;
+            text-align: center;
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- 블록속성 -->
+    <div class="parents">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>

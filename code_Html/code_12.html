@@ -1,0 +1,74 @@
+<!-- 
+    css
+    어떤 태그들에게 스타일 효과를 주는 언어
+
+    css 선택자 종류
+    - 태그선택자
+    - id선택자
+    - class선택자
+
+    태그 선택자
+    태그이름{ 속성1 : 속성값1; 속성2 : 속성값2;}
+
+    부모자식 선택자
+    태그 이름 사이에 공백을 넣은 선택자는 
+    부모 태그 하위에 있는 태그에 스타일을 적용시킵니다.
+
+    다중 조건 선택자
+    css 선택자에서도 and 나 or과 같은 선택자를 비슷하게나마 쓸 수 있다.
+    and : 선택자 사이에 공백이 제거되는 경우 여러 선택자를 동시에 만족하는 태그에 스타일을 적용
+    or : 쉼표를 통해 두 선택자 중 하나만 조건이 성립하면 스타일 적용가능
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+    <style>
+        /* 아이디 선택자 */
+        #m_box{
+            background-color: #09c;
+        }
+
+        /* 클래스 선택자 */
+        .box{
+            background-color: blue;
+        }
+
+        /* box2 색상 변경 */
+        /* my_id1 색상 변경 */
+        .box2{
+            background-color: antiquewhite;
+        }
+        #my_id1{
+            background-color: powderblue;
+        }
+
+        /* 태그 선택자 */
+        hr{
+            background-color: chocolate;
+        }
+
+    </style>
+ </head>
+
+ <body>
+     <!-- class는 동일한 이름 사용 가능 -->
+    <div class="box">box 클래스</div> 
+    <div class="box">box 클래스</div>
+     <!--id는 동일한 이름 사용 불가  -->
+    <div id="m_box">m_box 아이디</div> 
+
+    <!-- 화면에 줄을 긋는 태그 -->
+    <hr>
+
+    <div class="box2">html 1</div>
+    <div class="box2">html 2</div>
+    <div id="my_id1">html 3</div>
+
+    <hr>
+
+ </body>
+ </html>

@@ -1,0 +1,42 @@
+<!-- 
+    부모 요소 속성의 정렬
+    수직 정렬
+    수평 정렬
+    개별 정렬
+
+    css 속성 중에 텍스트를 수평으로 양쪽을 정렬하는 justify
+    css 속성 중에 인라인 요소를 수직으로 중앙 정렬하는 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parents {
+            display: grid;
+            border: 5px solid #000;
+            background-color: #fff;
+            grid-template-columns: auto auto  ;
+            height: 600px;
+            width: 500px;
+        }
+
+        .parents div {
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            background-color: darkgreen;
+            width: 100px; height: 100px;
+        }
+    </style>
+</head>
+<body>
+   <div class="parents">
+       <div>1</div>
+       <div>2</div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 순수 부모 자식 관계에서만 설정 */
+        .aa > .cc{
+            background-color: red;
+        }
+
+        /* 바로 상위 부모가 aa가 아니더라도 설정 */
+        .aa .cc{
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="aa">
+        <div class="cc">
+            sec1
+        </div>
+    </div>
+    
+    <div class="aa">
+        <div class="bb">
+            <div class="cc">
+                sec2
+            </div>
+        </div>
+    </div>
+</body>
+</html>

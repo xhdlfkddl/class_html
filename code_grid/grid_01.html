@@ -1,0 +1,66 @@
+<!-- 
+    그리드 레이아웃
+    부모요소에서 값을 주는 것 
+    자식요소에서 쓰이는 속성이 있음
+
+    Container에 쓰이는 속성
+    그리드 속성은 몇개를 제외하고 모든 속성이 grid로 시작함
+    코드 힘트를 통해서 쉽게 찾을 수 있음
+    부모 요소에서 사용하는 속성인지 자식 요소에서 사용하는 속성인지는 암기해야함
+    컬럼과 로우에 대한 개념, 템플릿이라는 개념 2가지가 매우 중요합니다.
+
+    colum & row
+    컬럼은 열, 로우는 행
+    컬럼은 세로, 로우는 가로
+
+    template
+    가로 세로 구획을 나눌 때 부모요소에 사용하는 템플릿은 형판이라는 뜻
+    그리드레이아웃의 시작은 첫번째 display:grid 라는 속성과 값으로 무조건 시작해야함
+
+    부모요소에서 사용하는 grid 속성
+    display: grid;
+    
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid_container{
+            /* 항상 grid로 바꿔줘야함 */
+            display: grid;
+            /* auto 3번 = 3등분으로 나뉨 */
+            grid-template-columns: auto auto auto;
+            background-color: blanchedalmond;
+            padding: 10px;
+        }
+
+        .grid_id_item{
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Elements</h1>
+    
+    <div class="grid_container">
+        <div class="grid_id_item">1</div>
+        <div class="grid_id_item">2</div>
+        <div class="grid_id_item">3</div>
+        <div class="grid_id_item">4</div>
+        <div class="grid_id_item">5</div>
+        <div class="grid_id_item">6</div>
+        <div class="grid_id_item">7</div>
+        <div class="grid_id_item">8</div>
+        <div class="grid_id_item">9</div>
+    </div>
+
+</body>
+</html>

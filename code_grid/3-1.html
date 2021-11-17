@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid black;
+        }
+        th, td{
+            border: 1px solid #444;
+            text-align: center;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        <tr> 행
+        <td> 열
+        <thead> 표 제목   
+        <th> 제목   
+        <tbody> 표의 본문        
+     -->
+    <table>
+        <!-- 행 -->
+        <tr>
+            <!-- 열 -->
+            <td>섹션 1</td>
+            <td>섹션 2</td>
+        </tr>
+        <tr>
+            <td>섹션 3</td>
+            <td>섹션 4</td>
+        </tr>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>학교</th>
+                <th>창립년도</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>서울대학교</td>
+                <td>1946</td>
+            </tr>
+            <tr>
+                <td>고려대학교</td>
+                <td>1985</td>
+            </tr>
+            <tr>
+                <td>연세대학교</td>
+                <td>1885</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>가족</th>
+                <th>이름</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>부</td>
+                <td>김영국</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>모</td>
+                <td>김지연</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>누이</td>
+                <td>김다연</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>본인</td>
+                <td>김태영</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>제</td>
+                <td>김아토</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <tr>
+            <!-- 열(가로) 합치기 -->
+            <td colspan="2">2X1 셀</td>
+        </tr>
+        <tr>
+            <td>1X1 셀</td>
+            <td>1X1 셀</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <!-- 행(세로) 합치기 -->
+            <td rowspan="2">1X2 셀</td>
+            <td>1X1 셀</td>
+        </tr>
+        <tr>
+            <td>1X1 셀</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <td colspan="4">Images</td>
+        </tr>
+        <tr>
+            <td><a href="#"><img src="001.png" alt=""></a></td>
+            <td><a href="#"><img src="002.png" alt=""></a></td>
+            <td><a href="#"><img src="003.png" alt=""></a></td>
+            <td><a href="#"><img src="004.png" alt=""></a></td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parents {
+            border: 5px solid #000;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* 첫번째 가로 높이 100px
+                두번째 가로 높이 200px
+                첫번째 값만 입력하게 되면 두번째는 auto로 설정됨 */
+            grid-template-rows: 100px 200px;
+        }
+
+        .parents div {
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            background-color: greenyellow;
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="parents">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>
