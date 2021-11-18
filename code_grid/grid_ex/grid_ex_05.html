@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parents {
+            display: grid;
+            gap: 10px;
+            height: 100vh;
+            /* 세로 3등분 */
+            grid-template-columns: 300px 1fr 300px;
+            /* 가로 3등분 */
+            grid-template-rows: 100px 1fr 100px;
+        }
+        
+        .parents div {
+            background-color: skyblue;
+            padding: 20px;
+            border: 1px solid #000;
+            /*글을 가운데 정렬하는 법*/
+            display: grid;
+            /*수평정렬*/
+            justify-items: center;
+            /*수직정렬*/
+            align-items: center;
+        }
+
+        .parents .item1 {
+            grid-column: 1 / span 3;
+        }
+
+        .parents .item5 {
+            grid-column: 1 / span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="parents">
+        <div class="item1">header</div>
+        <div class="item2">menu</div>
+        <div class="item3">main</div>
+        <div class="item4">aside</div>
+        <div class="item5">footer</div>
+    </div>
+</body>
+</html>

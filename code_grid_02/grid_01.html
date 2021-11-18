@@ -1,0 +1,47 @@
+<!-- 
+    자식요소에 사용하는 grid 속성
+    justify-self \ center \ end \ strech
+    -> 자식 요소 수평정렬
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parents {
+            border: 5px solid #000;
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 600px;
+            height: 200px;
+            /* 수평정렬 */
+            justify-items: center;
+            align-items: center;
+        }
+
+        .parents div {
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            background-color: hotpink;
+            width: 100px; 
+            height: 100px;
+        }
+
+        /*  */
+        .parents div:nth-child(2) {
+            /* 컬럼 내에서 수평 정렬을 개별적으로 조절할 수 있다. */
+            justify-self: end;
+        }
+    </style>
+</head>
+<body>
+    <div class="parents">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+</html>
