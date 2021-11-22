@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .parents {
+            border: 5px solid #000;
+            gap: 10px;
+            display: grid;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-rows: 100px 150px 1fr 150PX 100px;
+            height: 100vh;
+        }
+
+        .parents div {
+            border: 1px solid #000;
+            font-size: 30px;
+            background-color: skyblue;
+            text-align: center;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            
+        }
+
+        .parents .header {
+            grid-column: 1 / 4;
+        }
+
+        .parents .menu {
+            grid-row: 2 / 5;
+        }
+        
+        .parents .main {
+            grid-row: 2 / 5;
+        }
+
+        .parents .footer {
+            grid-column: 1 / 4;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="parents">
+        <div class="header">header</div>
+        <div class="menu">menu</div>
+        <div class="main">main</div>
+        <div class="top">top</div>
+        <div class="aside">aside</div>
+        <div class="bottom">bottom</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

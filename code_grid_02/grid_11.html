@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parents {
+            display: grid;
+            border: 5px solid #000;
+            background-color: khaki;
+            grid-template-areas: 
+            'header header header'
+            'gnb content inb'
+            'gnb footer footer';
+            height: 100vh;
+        }
+
+        .parents div {
+            text-align: center;
+            font-size: 30px;
+            border: 1px solid #000;
+        }
+
+        .header {
+            grid-area: header;
+        }
+        .gnb {
+            grid-area: gnb;
+        }
+        .content {
+            grid-area: content;
+        }
+        .inb {
+            grid-area: inb;
+        }
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="parents">
+        <div class="header">header</div>
+        <div class="gnb">gnb</div>
+        <div class="content">content</div>
+        <div class="lnb">lnb</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

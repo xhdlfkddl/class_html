@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+.photo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5px;
+}
+
+.photo img {
+  width: 100%;
+}

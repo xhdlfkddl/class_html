@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .parents {
+            border: 5px solid #000;
+            background-color: khaki;
+            height: 700px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* items = 한줄 content = 여러줄 */
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        .item {
+            font-size: 30px;
+            border: 1px solid #000;
+            background-color: skyblue;
+            width: 150px;
+            height: 150px;
+            display: grid;
+            /* 부모에서 자식 이동 */
+            justify-items: center;
+            align-items: center;
+        }
+
+        .item div {
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            text-align: center;
+        }
+
+        .one div {
+            /*부모 정렬과 상관없이 정렬*/
+            justify-self: start;
+            align-self: stretch;
+            background-color: blanchedalmond;
+        }
+
+        .two div {
+            justify-self: end;
+            align-self: start;
+        }
+        
+        .three div {
+            justify-self: stretch;
+            align-self: end;
+        }
+        
+        .four div {
+            justify-self: end;
+            align-self: end;
+        }
+        
+        .five div {
+            width: auto;
+            height: auto;
+            justify-self: stretch;
+            align-self: stretch;
+        }
+
+
+
+        .nine div {
+            width: auto;
+            height: auto;
+            justify-self: stretch;
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="parents">
+        <div class="item one">
+            <div>1</div>
+        </div>
+        <div class="item two">
+            <div>2</div>
+        </div>
+        <div class="item three">
+            <div>3</div>
+        </div>
+        <div class="item four">
+            <div>4</div>
+        </div>
+        <div class="item five">
+            <div>5</div>
+        </div>
+        <div class="item six">
+            <div>6</div>
+        </div>
+        <div class="item seven">
+            <div>7</div></div>
+        <div class="item eight"><div>8</div></div>
+        <div class="item nine"><div>9</div></div>
+    </div>
+
+</body>
+</html>
